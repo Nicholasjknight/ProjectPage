@@ -8,62 +8,73 @@ body{
     background-image: url(./images/pexels-miguel-á-padriñán-19670.jpg);
     background-size: cover;
     }
-.pageName{
-    margin-top: 20px;
+nav{
+    background-image: url(./images/allec-gomes-gJ8VovObjRA-unsplash.jpg);
+    background-size: cover;
+    border-bottom: rgba(190, 12, 12, 0.6) 2mm groove;
+    position: fixed;
+    margin: 0;
     top: 0;
-    margin-left: 10%;
-    padding: 30px;
-    width: 90vw;
-    text-align: center;
+    z-index: 1;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 40px;
+      }
+.pageName{
+    top: 0;
+    padding: 15px 10px;
+    width: 100%;
     color: white;
     font-size: xx-large;
     font-weight: bold;
-    background: rgb(0, 0, 0, .8);
     border-bottom: rgba(190, 12, 12, 0.6) 1mm groove;
-    border-top: rgb(190, 12, 12, .6) 1mm groove;
-    }
-.navBar{    
-    background-image: url(./images/allec-gomes-gJ8VovObjRA-unsplash.jpg);
-    background-size: cover;
-    height: 98vh;
-    width: 10vw;
-    min-width: 120px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
+                    }
+.pageName h1{
+    padding: 0 5%;
+    width: 100%;
+}
+.sideLinks ul{    
+    width: 100vw;
+    list-style-type: none;
+    padding: 0;
     overflow: hidden;
-    overflow-y: visible;
-    padding-top: 60px;
-    text-align: left;
-    border-right: black 1mm groove;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    }
-.navBar a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: full-width;
-    font-weight: bold;
+    text-align: center;
+    top: 0;
+    background: rgb(0, 0, 0, .5);
+               }
+.sideLinks li{
+    margin-left: 20px;
+    float: left;
+            }
+.sideLinks li a{
     display: block;
-    padding: 30px 10px;
-    }
-.sideLinks{
-    list-style: none;
+    color: white;
+    text-align: center;
+    padding: 14px 5vw;
+    text-decoration: none;
 }
 .sideLinks a:hover{
-    display: block;
+    height: 100%;
 	opacity: .8;
 	transition: 1s;
     color: red;
-    background-color: black;
+    }
+.bodyVideo{
+    height: 60vh;
+    margin: 0 auto;
+    margin-left: 0;
+    margin-top: 120px;
 }
+.bodyVideo iframe{
+    display: block;
+    width: 80vw;
+    margin-left: 10vw;
+        }
 .followMe{
-    width: 20vw;
+    width: 25vw;
     font-size: small;
-    margin-left: 44vw;
+    margin: auto;
     margin-top: 10px;
+    font-size: medium;
     color: black;
     text-align: center;
 }
@@ -71,13 +82,12 @@ body{
     margin-top: 5px;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    margin-left: 40vw;
+    margin-left: 35%;
     width: 20vw;
     height: 2vh;
     gap: 2vh 3vw;
     text-align: center;
-    
-}
+  }
 .icons a{
     display: grid;
     top: 0;
@@ -87,6 +97,8 @@ body{
     display: grid;
     width: 2vw;
     height: 2vh;
+    max-height: 30px;
+    max-width: 30px;
     text-align: center;
 }
 .icons a:hover{
@@ -95,32 +107,11 @@ body{
 	opacity: .5;
 	transition: 1s;
 }
-.bodyVideo{
-    height: 60vh;
-    margin: 0 auto;
-    margin-left: 10vw;
-    margin-top: 20px;
-}
-.bodyVideo iframe{
-    display: block;
-    margin-left: 15vw;
-    width: 60vw;
-        }
-.emailText{
-    bottom: 0;
-    color: black;
-    font-size: large;
-    text-align: center;    
-}
-.emailText a{
-    bottom: 0;
-}
 .boxes{
     background: rgb(0, 0, 0, .7);
     margin-top: 10px;
-    width: 90vw;
+    width: 100vw;
     line-height: 0px;
-    margin-left: 10vw;
     text-align: center;
     vertical-align: top;
     display: table;
@@ -137,25 +128,25 @@ body{
     height: 12vh;
     width: 12vw;
     margin-left: 10vw;
-    min-width: 30%;
+    min-width: auto;
         }
 .boxes2{
+    width: 100vw;
     margin-top: 10px;
     max-height: fit-content;
-    margin-left: 10vw;
-    vertical-align: top;
     display: table;
     background-color: rgb(0, 0, 0, .7);
                }
 .bxtxt{ 
     color: whitesmoke;
     display: table-cell;
+    width: 35vw;
     vertical-align: top;
     text-decoration: none;
         }
 .bxtxt li{
     width: 20vw;
-    margin-left: 10vw;   
+    margin-left: 10vw;
     margin-bottom: 20px;
     }
 .aboutism{
@@ -163,20 +154,20 @@ body{
     color: black;
     border-radius: 25px;
     width: 75vw;
-    margin-left: 20vw;
+    margin-left: 10vw;
     text-align: left;
         }
 .aboutTitle{
     margin-top: 80px;
     width: 75vw;
-    margin-left: 25vw;
     color: black;
     text-align: left;
     margin-top: 80px;
+    margin-left: 10vw;
         }
 .projectTitle{
-    width: 60vw;
-    margin-left: 25vw;
+    width: 80vw;
+    margin-left: 10vw;
     color: black;
     text-align: left;
     margin-top: 80px;
@@ -186,17 +177,19 @@ body{
 	display: table;
 	height: auto;
 	font-size: 0;
-    width: 75vw;
-    margin-left: 20vw;
+    width: 80vw;
+    height: 50vh;
+    margin-left: 10vw;
 	background: #000;
     border-radius: 10px;
 }
 #video_player video,
-	#video_player figcaption {
-		display: table-cell;
-		vertical-align: top;
-        height: 100vh;
-        overflow: hidden;
+#video_player figcaption {
+	display: table-cell;
+	vertical-align: top;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 10px;
         }
 .figHeight{
     height: 20vh;
@@ -225,31 +218,51 @@ body{
 }
 .projectGames{
     width: 60vw;
-    margin-left: 25vw;
+    margin-left: 10vw;
     color: black;
     text-align: left;
     margin-top: 80px;
-}
+    }
 .projectsGames{
     margin-top: 10px;
-    width: 75vw;
-    margin-left: 20vw;
+    width: 80vw;
+    margin-left: 10vw;
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 3vh 3vw;
-    background-color: aqua;
+    background: rgb(0, 0, 0);
     padding: 10px;
 }
 .projectsGames div{
+    display: block;
     width: 30vw;
     height: 20vh;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(0, 0, 0, .5);
     text-align: center;
-    padding: 20px 0;
     font-size: 16;
 }
-.projectsGames img{
-    width: 100%;
-    height: 100%;
+.row1 {
+    height: 150px;
+    margin-left: 5%;
 }
+.row1 a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.row1 a:hover{
+    height: 100%;
+	opacity: .8;
+	transition: 1s;
+    color: red;
+    background-color: black;
+}
+.row1 img{
+    height: 100%;
+    width: 100%;
+}
+.emailText{
+    text-align: center;
+}
+
 
