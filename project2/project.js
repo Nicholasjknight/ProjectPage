@@ -20,7 +20,6 @@
         videotarget = this.getAttribute("href");
         filename = videotarget.substr(0, videotarget.lastIndexOf('.')) || videotarget;
         video = document.querySelector("#video_player video");
-        video.removeAttribute("controls");
         video.removeAttribute("poster");
         source = document.querySelectorAll("#video_player video source");
         source[0].src = filename + ".mp4";
