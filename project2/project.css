@@ -27,8 +27,9 @@ nav{
     font-size: xx-large;
     font-weight: bold;
     border-bottom: rgba(190, 12, 12, 0.6) 1mm groove;
+    z-index: 1;
                     }
-.pageName h1{
+.pageName h3{
     padding: 0 5%;
     width: 100%;
 }
@@ -56,18 +57,22 @@ nav{
     height: 100%;
 	opacity: .8;
 	transition: 1s;
+    z-index: 2;
     color: red;
+    background-color: #000;
     }
 .bodyVideo{
     height: 60vh;
     margin: 0 auto;
     margin-left: 0;
-    margin-top: 120px;
+    margin-top: 180px;
 }
 .bodyVideo iframe{
     display: block;
     width: 80vw;
+    max-width: 1000px;
     margin-left: 10vw;
+    margin: auto;
         }
 .followMe{
     width: 25vw;
@@ -82,8 +87,8 @@ nav{
     margin-top: 5px;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    margin-left: 35%;
-    width: 20vw;
+    margin: auto;
+    width: 25vw;
     height: 2vh;
     gap: 2vh 3vw;
     text-align: center;
@@ -203,8 +208,7 @@ nav{
     overflow-y: scroll;
                 }
 #video_player figcaption a {
-    
-	display: block;
+    display: block;
 	opacity: .5;
 	transition: 1s;
 }
@@ -222,7 +226,7 @@ nav{
     color: black;
     text-align: left;
     margin-top: 80px;
-    }
+        }
 .projectsGames{
     margin-top: 10px;
     width: 80vw;
@@ -232,15 +236,18 @@ nav{
     gap: 3vh 3vw;
     background: rgb(0, 0, 0);
     padding: 10px;
+    border-radius: 25px;
+    margin: auto;
 }
 .projectsGames div{
     display: block;
     width: 30vw;
+    max-width: 500px;
     height: 20vh;
     background-color: rgb(0, 0, 0, .5);
     text-align: center;
     font-size: 16;
-}
+    }
 .row1 {
     height: 150px;
     margin-left: 5%;
@@ -249,14 +256,13 @@ nav{
     list-style: none;
     text-decoration: none;
     color: white;
-}
+    }
 .row1 a:hover{
     height: 100%;
-	opacity: .8;
+	opacity: .5;
 	transition: 1s;
     color: red;
-    background-color: black;
-}
+    }
 .row1 img{
     height: 100%;
     width: 100%;
